@@ -9,6 +9,7 @@ class ApplicantsList(object):
     
     """
 
+    @classmethod
     def __init__(self):
         """
         ApplicantsList - a model defined in Swagger
@@ -248,6 +249,28 @@ class ApplicantsList(object):
         self._user = user
 
     @property
+    def name(self):
+        """
+        Gets the name of Applicant.
+        name of Applicants
+
+        :return: The name of Applicant.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """
+        Sets the name of Applicant.
+        name of Applicants
+
+        :param name: The name of Applicant.
+        :type: str
+        """
+        self._name = name
+
+    @property
     def createdAt(self):
         """
         Gets the createdAt of Applicant.
@@ -378,6 +401,28 @@ class ApplicantsList(object):
         :type: number
         """
         self._evaluationAverage = evaluationAverage
+
+    @property
+    def ratingAverage(self):
+        """
+        Gets the ratingAverage of Applicant.
+        ratingAverage of Applicants
+
+        :return: The ratingAverage of Applicant.
+        :rtype: number
+        """
+        return self._ratingAverage
+
+    @ratingAverage.setter
+    def ratingAverage(self, ratingAverage):
+        """
+        Sets the ratingAverage of Applicant.
+        ratingAverage of Applicants
+
+        :param ratingAverage: The ratingAverage of Applicant.
+        :type: number
+        """
+        self._ratingAverage = ratingAverage
 
     @property
     def files(self):
