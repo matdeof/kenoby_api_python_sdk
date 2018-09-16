@@ -78,3 +78,4 @@ from swagger_client.api.users_api import UsersApi
 from swagger_client.api_client import ApiClient
 from swagger_client.configuration import Configuration
 # import models into sdk package
+from .models.applicants_list import ApplicantsList
